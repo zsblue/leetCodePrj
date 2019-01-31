@@ -66,10 +66,10 @@ public class leet009 {
     }
 
 
-    public boolean isPalindrome(int x) {
+    public boolean isPalindrome2(int x) {
 
         //String s = String.valueOf(x);
-        char[] s= (x+"").toCharArray();
+        char[] s = (x + "").toCharArray();
         int left = 0;
         int right = s.length - 1;
         while (left < right) {
@@ -80,14 +80,24 @@ public class leet009 {
         return true;
     }
 
-    public boolean isPalindrome2(int x) {
-        int ret = 0;
-        int temp = x;
-        while (temp > 0) {
-            ret = ret * 10 + temp % 10;
-            temp /= 10;
+    public boolean isPalindrome(int x) {
+
+        // 特殊情况：
+        // 如上所述，当 x < 0 时，x 不是回文数。
+        // 同样地，如果数字的最后一位是 0，为了使该数字为回文，
+        // 则其第一位数字也应该是 0
+        // 只有 0 满足这一属性
+        if(x < 0 || (x % 10 == 0 && x != 0)) {
+            return false;
         }
-        return ret == x;
+
+        int ret = 0;
+
+        while (x > ret) {
+            ret = ret * 10 + x % 10;
+            x /= 10;
+        }
+        return ret == x || x == ret / 10;
     }
 
 }

@@ -156,12 +156,5 @@ public class leet234 {
         }
         return false;
     }
-    public class ListNode {
-        int val;
-        ListNode next;
 
-        ListNode(int x) {
-            val = x;
-        }
-    }
 }
