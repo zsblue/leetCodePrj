@@ -36,12 +36,12 @@ public class leet092 {
         leet092 l = new leet092();
 
         ListNode l1 = new ListNode(1);
-        l1.next = new ListNode(2);
-        l1.next.next = new ListNode(3);
-        l1.next.next.next = new ListNode(4);
-        l1.next.next.next.next = new ListNode(5);
+//        l1.next = new ListNode(2);
+//        l1.next.next = new ListNode(3);
+//        l1.next.next.next = new ListNode(4);
+//        l1.next.next.next.next = new ListNode(5);
 
-        ListNode ret = l.reverseBetween(l1, 2, 4);
+        ListNode ret = l.reverseBetween(l1, 1, 1);
         ret.out();
 
     }
@@ -50,13 +50,12 @@ public class leet092 {
         if (head == null) {
             return null;
         }
-
         ListNode p = head;
         ListNode ret = new ListNode(0);
         ListNode p2 = ret;
 
         ListNode pre = new ListNode(0);
-        ListNode next=pre;
+        ListNode next = pre;
         ListNode last = pre;
 
         int i = 1;
@@ -68,8 +67,6 @@ public class leet092 {
 
             p = p.next;
         }
-
-
         while (p.next != null && i < n) {
             i++;
             pre.val = p.val;
@@ -78,20 +75,16 @@ public class leet092 {
             pre = next;
             p = p.next;
         }
-        if (pre.next != null) {
+        pre.val = p.val;
+        p2.next = pre;
+        p = p.next;
 
-            p2.next = pre.next;
-        }
-
-        while (p.next != null) {
+        while (p != null) {
             last.next = new ListNode(p.val);
             last = last.next;
             p = p.next;
         }
 
-        if (p != null) {
-            last.next = new ListNode(p.val);
-        }
         return ret.next;
     }
 }
