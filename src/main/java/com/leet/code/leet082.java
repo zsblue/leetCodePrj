@@ -1,4 +1,9 @@
-package main.java.com.leet.code;
+package com.leet.code;
+
+import javax.swing.text.html.HTMLDocument;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
 
 /**
  * **
@@ -30,9 +35,11 @@ package main.java.com.leet.code;
  * 输入: 1->1->1->2->3
  * 输出: 2->3
  */
-public class leet082 {
+public class leet082 extends BaseLeet {
     public static void main(String args[]) {
-        leet082 leet = new leet082();
+
+
+
         ListNode l1 = new ListNode(1);
         l1.next = new ListNode(2);
         l1.next.next = new ListNode(3);
@@ -40,8 +47,13 @@ public class leet082 {
         l1.next.next.next.next = new ListNode(4);
         l1.next.next.next.next.next = new ListNode(4);
         l1.next.next.next.next.next.next = new ListNode(5);
-        ListNode ret = leet.deleteDuplicates(l1);
-        ret.out();
+
+
+        Class cls = leet082.class;
+        String methodName = "deleteDuplicates";
+        leetRun(cls, methodName, new Object[]{l1});
+
+
 
         l1 = new ListNode(1);
         l1.next = new ListNode(1);
@@ -49,12 +61,72 @@ public class leet082 {
         l1.next.next.next = new ListNode(2);
         l1.next.next.next.next = new ListNode(3);
 
-        ret = leet.deleteDuplicates(l1);
-        ret.out();
+        leetRun(cls, methodName, new Object[]{l1});
 
     }
 
+
     public ListNode deleteDuplicates(ListNode head) {
+        if (head == null) {
+            return null;
+        }
+        if (head.next != null && head.val == head.next.val) {
+            // 去除连续重复
+            while (head.next != null && head.val == head.next.val) {
+                head = head.next;
+            }
+            // 从下一个开始继续去重
+            return deleteDuplicates(head.next);
+        } else {
+            // 去重next的数据
+            head.next = deleteDuplicates(head.next);
+        }
+        return head;
+    }
+
+    public ListNode deleteDuplicates3(ListNode head) {
+
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        HashMap<Integer, Integer> link = new HashMap<>();
+
+        ListNode p1 = head;
+        link.put(p1.val, 1);
+
+        while (p1.next != null) {
+            if (!link.containsKey(p1.next.val)) {
+                link.put(p1.next.val, 1);
+            } else {
+                link.put(p1.next.val, link.get(p1.next.val) + 1);
+            }
+            p1 = p1.next;
+        }
+
+        ListNode ret = new ListNode(0);
+        ListNode p2 = ret;
+        p1 = head;
+
+        while (p1 != null) {
+            if (link.get(p1.val) > 1) {
+                p1 = p1.next;
+                continue;
+            }
+            p2.next = new ListNode(p1.val);
+            p2 = p2.next;
+
+            if (p1.next == null) {
+                break;
+            }
+            p1 = p1.next;
+        }
+
+
+        return ret.next;
+    }
+
+    public ListNode deleteDuplicates2(ListNode head) {
 
         ListNode ret = new ListNode(-1);
         ret.next = head;

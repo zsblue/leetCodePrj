@@ -1,6 +1,6 @@
-package main.java.com.leet;
+package com.leet;
 
-import main.java.com.leet.code.leet459;
+import com.leet.code.leet459;
 
 /**
  * **

@@ -1,4 +1,4 @@
-package main.java.com.leet.code;
+package com.leet.code;
 
 import javafx.beans.binding.NumberBinding;
 import javafx.beans.binding.NumberExpressionBase;
