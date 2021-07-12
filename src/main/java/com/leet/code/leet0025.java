@@ -1,10 +1,5 @@
 package com.leet.code;
 
-import java.lang.reflect.Method;
-import java.util.List;
-import java.util.Objects;
-import java.util.logging.Level;
-
 /**
  * **
  * .*                   @
@@ -40,7 +35,7 @@ import java.util.logging.Level;
  * 你的算法只能使用常数的额外空间。
  * 你不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。
  */
-public class leet025 {
+public class leet0025 {
 
     public static void main(String args[]) {
 
@@ -50,7 +45,7 @@ public class leet025 {
         l1.next.next.next = new ListNode(4);
         l1.next.next.next.next = new ListNode(5);
 
-        leet025 leet = new leet025();
+        leet0025 leet = new leet0025();
         ListNode ret = leet.reverseKGroup(l1, 3);
         ret.out();
         ;

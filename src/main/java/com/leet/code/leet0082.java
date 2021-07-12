@@ -1,9 +1,6 @@
 package com.leet.code;
 
-import javax.swing.text.html.HTMLDocument;
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
 
 /**
  * **
@@ -35,7 +32,7 @@ import java.util.LinkedHashMap;
  * 输入: 1->1->1->2->3
  * 输出: 2->3
  */
-public class leet082 extends BaseLeet {
+public class leet0082 extends BaseLeet {
     public static void main(String args[]) {
 
 
@@ -49,7 +46,7 @@ public class leet082 extends BaseLeet {
         l1.next.next.next.next.next.next = new ListNode(5);
 
 
-        Class cls = leet082.class;
+        Class cls = leet0082.class;
         String methodName = "deleteDuplicates";
         leetRun(cls, methodName, new Object[]{l1});
 

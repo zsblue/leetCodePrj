@@ -1,7 +1,6 @@
 package com.leet.code;
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 /**
  * **
@@ -42,12 +41,12 @@ import java.util.HashSet;
  * 解释: 因为无重复字符的最长子串是 "wke"，所以其长度为 3。
  * 请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
  */
-public class leet003 {
+public class leet0003 {
 
     public static void main(String[] args) {
 
         int max = 0;
-        leet003 l = new leet003();
+        leet0003 l = new leet0003();
 
         String s = "dvdf";
         max = l.lengthOfLongestSubstring(s);

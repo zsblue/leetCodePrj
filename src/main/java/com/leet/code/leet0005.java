@@ -31,11 +31,11 @@ package com.leet.code;
  * 输入: "cbbd"
  * 输出: "bb"
  */
-public class leet005 {
+public class leet0005 {
 
     public static void main(String[] args) {
 
-        leet005 l = new leet005();
+        leet0005 l = new leet0005();
         String s = "babab";
         System.out.println(s + "-->" + l.longestPalindrome(s));
         s = "cbbd";

@@ -1,6 +1,6 @@
 package com.leet;
 
-import com.leet.code.leet459;
+import com.leet.code.leet0459;
 
 /**
  * **
@@ -22,6 +22,6 @@ import com.leet.code.leet459;
  */
 public class Application {
     public static void main(String[]args){
-        leet459.testDup();
+        leet0459.testDup();
     }
 }

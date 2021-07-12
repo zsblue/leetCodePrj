@@ -32,10 +32,10 @@ package com.leet.code;
  * 输入: "race a car"
  * 输出: false
  */
-public class leet125 {
+public class leet0125 {
 
     public static void main(String[]args){
-        leet125 l = new leet125();
+        leet0125 l = new leet0125();
 
 
         String s = "A man, a plan, a canal: Panama";

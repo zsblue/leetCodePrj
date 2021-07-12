@@ -51,10 +51,10 @@ import java.util.List;
  * E C   I H   N
  * T     S     G
  */
-public class leet006 {
+public class leet0006 {
 
     public static void main(String[] args) {
-        leet006 l = new leet006();
+        leet0006 l = new leet0006();
 
         String s = "LEETCODEISHIRING";
         int numRows = 3;

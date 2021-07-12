@@ -38,9 +38,9 @@ package com.leet.code;
  * <p>
  * 你能不将整数转为字符串来解决这个问题吗
  */
-public class leet009 {
+public class leet0009 {
     public static void main(String[] args) {
-        leet009 l = new leet009();
+        leet0009 l = new leet0009();
         l.test();
     }
 

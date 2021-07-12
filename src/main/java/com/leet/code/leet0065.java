@@ -1,8 +1,5 @@
 package com.leet.code;
 
-import javafx.beans.binding.NumberBinding;
-import javafx.beans.binding.NumberExpressionBase;
-
 /**
  * **
  * .*                   @
@@ -32,9 +29,9 @@ import javafx.beans.binding.NumberExpressionBase;
  * <p>
  * 说明: 我们有意将问题陈述地比较模糊。在实现代码之前，你应当事先思考所有可能的情况。
  */
-public class leet065 {
+public class leet0065 {
     public static void main(String[] args) {
-        leet065 l = new leet065();
+        leet0065 l = new leet0065();
 
         String s = "0";
         String result = "true";

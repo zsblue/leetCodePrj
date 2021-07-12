@@ -1,7 +1,5 @@
 package com.leet.code;
 
-import java.util.LinkedHashMap;
-
 /**
  * **
  * .*                   @
@@ -33,10 +31,10 @@ import java.util.LinkedHashMap;
  * 进阶：
  * 你能否用 O(n) 时间复杂度和 O(1) 空间复杂度解决此题？
  */
-public class leet234 {
+public class leet0234 {
 
     public static void main(String[] args) {
-        leet234 l = new leet234();
+        leet0234 l = new leet0234();
         l.test();
     }
 

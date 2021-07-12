@@ -1,7 +1,5 @@
 package com.leet.code;
 
-import java.util.List;
-
 /**
  * **
  * .*                   @
@@ -30,10 +28,10 @@ import java.util.List;
  * 输入: 1->2->3->4->5->NULL, m = 2, n = 4
  * 输出: 1->4->3->2->5->NULL
  */
-public class leet092 {
+public class leet0092 {
 
     public static void main(String[] args) {
-        leet092 l = new leet092();
+        leet0092 l = new leet0092();
 
         ListNode l1 = new ListNode(1);
 //        l1.next = new ListNode(2);

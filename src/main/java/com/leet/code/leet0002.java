@@ -31,11 +31,11 @@ package com.leet.code;
  * 解释：342 + 465 = 807
  *
  */
-public class leet002 {
+public class leet0002 {
 
     public static void main(String[] args) {
 
-        leet002 l = new leet002();
+        leet0002 l = new leet0002();
         l.test();
 
 

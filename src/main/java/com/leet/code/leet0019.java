@@ -1,9 +1,5 @@
 package com.leet.code;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-
 /**
  * **
  * .*                   @
@@ -38,11 +34,11 @@ import java.util.List;
  * <p>
  * 你能尝试使用一趟扫描实现吗？
  */
-public class leet019 {
+public class leet0019 {
 
     public static void main(String[] args) {
 
-        leet019 l = new leet019();
+        leet0019 l = new leet0019();
 
         ListNode ln = new ListNode(1);
         ln.next = new ListNode(2);
