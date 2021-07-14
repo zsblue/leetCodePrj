@@ -51,47 +51,55 @@ public class leet0275 {
 
         int[] citations = new int[]{0, 1, 3, 5, 6};
         int ret = leet.hIndex(citations);
-        System.out.println("ret:=======>" + ret);
+        System.out.println("ret:3:=======>" + ret);
         ret = leet.hIndex(null);
-        System.out.println("ret:=======>" + ret);
+        System.out.println("ret:-1:=======>" + ret);
 
-
+        citations = new int[]{1};
+        ret = leet.hIndex(citations);
+        System.out.println("ret:1:=======>" + ret);
+        citations = new int[]{1, 2};
+        ret = leet.hIndex(citations);
+        System.out.println("ret:2:=======>" + ret);
+        citations = new int[]{0, 2};
+        ret = leet.hIndex(citations);
+        System.out.println("ret:1:=======>" + ret);
     }
 
-    public int hIndex(int[] citations) {
-
+    public int hIndex2(int[] citations) {
         if (citations == null || citations.length <= 0) {
             return -1;
         }
-        if (citations.length == 1) {
-            if (citations[0] == 0) {
-                return -1;
+        int h = citations.length;
+
+        for (int i = 0; i < citations.length; i++) {
+
+            h = citations.length - i;
+            if (citations[i] >= h) {
+                return h;
             }
         }
-        int cIndex = (citations.length - 1) / 2 + 1;
-        int lastH = -1;
+        return 0;
+    }
 
-        while (cIndex > 0) {
-            int h = citations[cIndex];
-            int x = citations.length - cIndex;
-            if (h == x) {
-                return citations[cIndex];
-            }
-            if (h > x) {
+    public int hIndex(int[] citations) {
+        if (citations == null || citations.length <= 0) {
+            return -1;
+        }
+        int n = citations.length;
 
-                cIndex = (cIndex - 1) / 2 + 1;
-                continue;
-            }
-            if (h < x) {
-                if (lastH < h) {
-                    lastH = h;
-                } else {
-                    return lastH;
-                }
+        int left = 0;
+        int right = n - 1;
+        while (left <= right) {
+
+            int mid = left + (right - left) / 2;
+            if (citations[mid] >= n - mid) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
             }
         }
-
-        return lastH;
+        return n - left;
 
     }
 }
