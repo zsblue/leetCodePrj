@@ -66,10 +66,10 @@ package com.leet.code;
  * 输出: "MCMXCIV"
  * 解释: M = 1000, CM = 900, XC = 90, IV = 4.
  */
-public class leet0012 {
+public class Leet0012 {
 
     public static void main(String[] args) {
-        leet0012 l = new leet0012();
+        Leet0012 l = new Leet0012();
 
         int s = 3;
         String result = "III";

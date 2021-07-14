@@ -28,10 +28,10 @@ package com.leet.code;
  * 输入: 1->2->3->4->5->NULL, m = 2, n = 4
  * 输出: 1->4->3->2->5->NULL
  */
-public class leet0092 {
+public class Leet0092 {
 
     public static void main(String[] args) {
-        leet0092 l = new leet0092();
+        Leet0092 l = new Leet0092();
 
         ListNode l1 = new ListNode(1);
 //        l1.next = new ListNode(2);

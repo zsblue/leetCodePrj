@@ -27,7 +27,7 @@ package com.leet.code;
  * 输入: head = 1->4->3->2->5->2, x = 3
  * 输出: 1->2->2->4->3->5
  */
-public class leet0086 extends BaseLeet {
+public class Leet0086 extends BaseLeet {
 
     public static void main(String args[]) {
 
@@ -38,7 +38,7 @@ public class leet0086 extends BaseLeet {
         l1.next.next.next.next = new ListNode(5);
         l1.next.next.next.next.next = new ListNode(2);
 
-        leet0086 leet = new leet0086();
+        Leet0086 leet = new Leet0086();
         leet.partition(l1, 3).out();
 
     }

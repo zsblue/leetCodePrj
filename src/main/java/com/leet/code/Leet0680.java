@@ -32,10 +32,10 @@ package com.leet.code;
  * <p>
  * 字符串只包含从 a-z 的小写字母。字符串的最大长度是50000
  */
-public class leet0680 {
+public class Leet0680 {
 
     public static void main(String[] args) {
-        leet0680 l = new leet0680();
+        Leet0680 l = new Leet0680();
         System.out.println(l.validPalindrome("aba"));
         System.out.println(l.validPalindrome("abca"));
         System.out.println(l.validPalindrome("abcaa"));

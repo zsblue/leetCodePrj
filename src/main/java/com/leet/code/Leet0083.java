@@ -30,9 +30,9 @@ package com.leet.code;
  * 输入: 1->1->2->3->3
  * 输出: 1->2->3
  */
-public class leet0083 {
+public class Leet0083 {
     public static void main(String args[]) {
-        leet0083 leet = new leet0083();
+        Leet0083 leet = new Leet0083();
         ListNode l1 = new ListNode(1);
         l1.next = new ListNode(1);
         l1.next.next = new ListNode(2);

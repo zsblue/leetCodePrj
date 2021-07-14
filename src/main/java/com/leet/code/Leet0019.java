@@ -34,11 +34,11 @@ package com.leet.code;
  * <p>
  * 你能尝试使用一趟扫描实现吗？
  */
-public class leet0019 {
+public class Leet0019 {
 
     public static void main(String[] args) {
 
-        leet0019 l = new leet0019();
+        Leet0019 l = new Leet0019();
 
         ListNode ln = new ListNode(1);
         ln.next = new ListNode(2);

@@ -85,10 +85,10 @@ import java.util.function.LongToDoubleFunction;
  * 查找每组的最大差值 maxn，在record中查找与nums2[i]最接近的数据
  * 返回(sum-maxn)%mod
  */
-public class leet1818 {
+public class Leet1818 {
 
     public static void main(String[] args) {
-        leet1818 leet = new leet1818();
+        Leet1818 leet = new Leet1818();
 
         int ret, result;
         int[] nums1, nums2;

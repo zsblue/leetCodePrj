@@ -32,7 +32,7 @@ import java.util.HashMap;
  * 输入: 1->1->1->2->3
  * 输出: 2->3
  */
-public class leet0082 extends BaseLeet {
+public class Leet0082 extends BaseLeet {
     public static void main(String args[]) {
 
 
@@ -46,7 +46,7 @@ public class leet0082 extends BaseLeet {
         l1.next.next.next.next.next.next = new ListNode(5);
 
 
-        Class cls = leet0082.class;
+        Class cls = Leet0082.class;
         String methodName = "deleteDuplicates";
         leetRun(cls, methodName, new Object[]{l1});
 

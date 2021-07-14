@@ -27,10 +27,10 @@ import java.util.List;
  * 输入: 1->2->3->4->5->NULL
  * 输出: 5->4->3->2->1->NULL
  */
-public class leet0206 {
+public class Leet0206 {
     public static void main(String[] args) {
 
-        leet0206 l = new leet0206();
+        Leet0206 l = new Leet0206();
 
         ListNode l1 = new ListNode(1);
         l1.next = new ListNode(2);

@@ -18,7 +18,7 @@ package com.leet.code;
  * **
  * create by zhangsong 2019/2/14
  */
-public class leet0007 {
+public class Leet0007 {
 
     public static void main(String[] args) {
 
@@ -26,7 +26,7 @@ public class leet0007 {
 
 
 
-//        leet0007 leet = new leet0007();
+//        Leet0007 leet = new Leet0007();
 //        System.out.println(leet.reverse(-1));
 //        System.out.println(leet.reverse(1534236469));
 //        System.out.println(leet.reverse(-10));

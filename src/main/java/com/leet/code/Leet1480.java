@@ -47,11 +47,11 @@ package com.leet.code;
  * -10^6 <= nums[i] <= 10^6
  * <p>
  */
-public class leet1480 {
+public class Leet1480 {
 
     public static void main(String[] args) {
 
-        leet1480 leet = new leet1480();
+        Leet1480 leet = new Leet1480();
         int[] nums = new int[]{1, 2, 3, 4};
         int[] renums = leet.runningSum(nums);
         System.out.println(renums.toString());

@@ -28,10 +28,10 @@ package com.leet.code;
  * 输入：[1,8,6,2,5,4,8,3,7]
  * 输出：49
  */
-public class leet0011 {
+public class Leet0011 {
 
     public static void main(String[] args) {
-        leet0011 leet = new leet0011();
+        Leet0011 leet = new Leet0011();
 
         int[] height = new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7};
         System.out.println(leet.maxArea(height));

@@ -29,9 +29,9 @@ package com.leet.code;
  * <p>
  * 说明: 我们有意将问题陈述地比较模糊。在实现代码之前，你应当事先思考所有可能的情况。
  */
-public class leet0065 {
+public class Leet0065 {
     public static void main(String[] args) {
-        leet0065 l = new leet0065();
+        Leet0065 l = new Leet0065();
 
         String s = "0";
         String result = "true";

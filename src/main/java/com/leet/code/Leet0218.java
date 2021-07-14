@@ -63,7 +63,7 @@ import java.util.List;
  * 链接：https://leetcode-cn.com/problems/the-skyline-problem
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class leet0218 {
+public class Leet0218 {
 
     public List<List<Integer>> getSkyline(int[][] buildings) {
 

@@ -38,8 +38,8 @@ import java.util.*;
  * [-1, -1, 2]
  * ]
  */
-public final class leet0015 {
-    static leet0015 leet = new leet0015();
+public final class Leet0015 {
+    static Leet0015 leet = new Leet0015();
     public static void main(String[] args) {
 
 

@@ -44,10 +44,10 @@ package com.leet.code;
  * 这是 H 指数 的延伸题目，本题中的 citations 数组是保证有序的。
  * 你可以优化你的算法到对数时间复杂度吗？
  */
-public class leet0275 {
+public class Leet0275 {
 
     public static void main(String[] args) {
-        leet0275 leet = new leet0275();
+        Leet0275 leet = new Leet0275();
 
         int[] citations = new int[]{0, 1, 3, 5, 6};
         int ret = leet.hIndex(citations);

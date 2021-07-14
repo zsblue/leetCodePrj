@@ -39,10 +39,10 @@ package com.leet.code;
  * <p>
  * 则中位数是 (2 + 3)/2 = 2.5
  */
-public class leet0004 {
+public class Leet0004 {
     public static void main(String[] args) {
 
-        leet0004 l = new leet0004();
+        Leet0004 l = new Leet0004();
 
         int[] nums1 = new int[]{1, 3};
         int[] nums2 = new int[]{2};

@@ -39,12 +39,12 @@ package com.leet.code;
  * 链接：https://leetcode-cn.com/problems/longest-common-prefix
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class leet0014 {
+public class Leet0014 {
 
 
     public static void main(String[] args) {
 
-        leet0014 leet = new leet0014();
+        Leet0014 leet = new Leet0014();
 
         String[] strs = new String[]{"flower", "flow", "flight"};
         System.out.println("result:" + leet.longestCommonPrefix(strs));

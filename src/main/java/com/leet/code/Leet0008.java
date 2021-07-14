@@ -66,10 +66,10 @@ package com.leet.code;
  * 解释: 数字 "-91283472332" 超过 32 位有符号整数范围。
  * 因此返回 INT_MIN (−231) 。
  */
-public class leet0008 {
+public class Leet0008 {
 
     public static void main(String[] args) {
-        leet0008 l = new leet0008();
+        Leet0008 l = new Leet0008();
 
         String s = "2147483648";
         String result = "42";

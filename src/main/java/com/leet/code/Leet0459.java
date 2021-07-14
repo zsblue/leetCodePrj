@@ -25,7 +25,7 @@ import java.io.InputStreamReader;
  * repeated-substring-pattern/
  * 重复字符串
  */
-public class leet0459 {
+public class Leet0459 {
 
     public static void main(String[]args){
         testDup();

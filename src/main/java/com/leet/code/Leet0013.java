@@ -69,11 +69,11 @@ import java.util.Map;
  * 输出: 1994
  * 解释: M = 1000, CM = 900, XC = 90, IV = 4.
  */
-public class leet0013 {
+public class Leet0013 {
 
 
     public static void main(String[] args) {
-        leet0013 l = new leet0013();
+        Leet0013 l = new Leet0013();
         l.test();
     }
 
