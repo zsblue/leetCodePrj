@@ -55,8 +55,8 @@ import java.util.List;
  * 提示：
  *
  * 1 <= buildings.length <= 104
- * 0 <= lefti < righti <= 231 - 1
- * 1 <= heighti <= 231 - 1
+ * 0 <= lefti < righti <= 2^31 - 1
+ * 1 <= heighti <= 2^31 - 1
  * buildings 按 lefti 非递减排序
  *
  * 来源：力扣（LeetCode）
