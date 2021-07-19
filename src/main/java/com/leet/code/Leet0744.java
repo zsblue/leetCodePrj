@@ -113,7 +113,7 @@ public class Leet0744 {
 
     }
 
-    public char nextGreatestLetter(char[] letters, char target) {
+    public char nextGreatestLetter2(char[] letters, char target) {
 
         if (letters.length == 1) {
             return letters[0];
@@ -145,6 +145,26 @@ public class Leet0744 {
         }
         return letters[index];
 
+    }
+
+    public char nextGreatestLetter(char[] letters, char target) {
+
+        if (letters.length == 1) {
+            return letters[0];
+        }
+        if (target >= letters[letters.length - 1]) {
+            return letters[0];
+        }
+        if (target < letters[0]) {
+            return letters[0];
+        }
+
+        for (int i = 0; i < letters.length; i++) {
+            if (target < letters[i]) {
+                return letters[i];
+            }
+        }
+        return letters[0];
     }
 
 
