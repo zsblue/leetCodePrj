@@ -1,6 +1,7 @@
 package com.leet.code;
 
 import java.lang.reflect.Method;
+import java.util.Arrays;
 
 /**
  * **
@@ -21,7 +22,7 @@ import java.lang.reflect.Method;
  * create by zhangsong 2019/2/11
  */
 public class BaseLeet {
-    public static void leetRun(Class cls, String methodName,  Object[]  pars ) {
+    public static void leetRun(Class cls, String methodName, Object[] pars) {
 
         try {
 
@@ -41,5 +42,18 @@ public class BaseLeet {
 
             System.out.println(ex);
         }
+    }
+
+    public static void check(int[] verify, int[] result) {
+        String a1 = Arrays.toString(verify);
+        String a2 = Arrays.toString(result);
+        System.out.println(a1.equals(a2));
+        System.out.println(a1);
+        System.out.println(a2);
+        System.out.println();
+    }
+
+    public static void check(int verify, int result) {
+        System.out.println((result == verify) + "===>" + verify + ";" + result);
     }
 }

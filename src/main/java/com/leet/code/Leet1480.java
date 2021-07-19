@@ -52,12 +52,26 @@ public class Leet1480 {
     public static void main(String[] args) {
 
         Leet1480 leet = new Leet1480();
-        int[] nums = new int[]{1, 2, 3, 4};
-        int[] renums = leet.runningSum(nums);
-        System.out.println(renums.toString());
+        int[] verify, result, nums;
+
+        nums = new int[]{1, 2, 3, 4};
+        verify = new int[]{1, 3, 6, 10};
+        result = leet.runningSum(nums);
+        BaseLeet.check(verify, result);
+
+        nums = new int[]{1, 1, 1, 1, 1};
+        verify = new int[]{1, 2, 3, 4, 5};
+        result = leet.runningSum(nums);
+        BaseLeet.check(verify, result);
+
+        nums = new int[]{3, 1, 2, 10, 1};
+        verify = new int[]{3, 4, 6, 16, 17};
+        result = leet.runningSum(nums);
+        BaseLeet.check(verify, result);
+
     }
 
-    public int[] runningSum(int[] nums) {
+    public int[] runningSum1(int[] nums) {
 
         if (nums.length <= 0) {
             return nums;
@@ -69,7 +83,7 @@ public class Leet1480 {
         return nums;
     }
 
-    public int[] runningSum2(int[] nums) {
+    public int[] runningSum(int[] nums) {
 
 
         int[] retnums = new int[nums.length];

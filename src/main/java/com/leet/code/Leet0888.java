@@ -77,35 +77,27 @@ public class Leet0888 {
         B = new int[]{2, 2};
         verify = new int[]{1, 2};
         result = leet.fairCandySwap(A, B);
-        check(verify, result);
+        BaseLeet.check(verify, result);
 
         A = new int[]{1, 2};
         B = new int[]{2, 3};
         verify = new int[]{1, 2};
         result = leet.fairCandySwap(A, B);
-        check(verify, result);
+        BaseLeet.check(verify, result);
 
         A = new int[]{2};
         B = new int[]{1, 3};
         verify = new int[]{2, 3};
         result = leet.fairCandySwap(A, B);
-        check(verify, result);
+        BaseLeet.check(verify, result);
 
         A = new int[]{1, 2, 5};
         B = new int[]{2, 4};
         verify = new int[]{5, 4};
         result = leet.fairCandySwap(A, B);
-        check(verify, result);
+        BaseLeet.check(verify, result);
     }
 
-    private static void check(int[] verify, int[] result) {
-        String a1 = Arrays.toString(verify);
-        String a2 = Arrays.toString(result);
-        System.out.println(a1.equals(a2));
-        System.out.println(a1);
-        System.out.println(a2);
-        System.out.println();
-    }
 
     public int[] fairCandySwap(int[] aliceSizes, int[] bobSizes) {
 
@@ -116,7 +108,7 @@ public class Leet0888 {
 
         Set<Integer> set1 = new HashSet<>();
 
-        for (int x: aliceSizes) {
+        for (int x : aliceSizes) {
 
             set1.add(x);
         }
