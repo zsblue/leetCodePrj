@@ -56,4 +56,8 @@ public class BaseLeet {
     public static void check(int verify, int result) {
         System.out.println((result == verify) + "===>" + verify + ";" + result);
     }
+
+    public static void check(boolean verify, boolean result) {
+        System.out.println((result == verify) + "===>" + verify + ";" + result);
+    }
 }
