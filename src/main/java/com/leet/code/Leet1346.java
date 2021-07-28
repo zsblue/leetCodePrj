@@ -132,6 +132,7 @@ public class Leet1346 {
      */
     public boolean checkIfExist2(int[] arr) {
 
+
         Set<Integer> set = new HashSet<>();
 
         int zeroCount = 0;
@@ -164,6 +165,28 @@ public class Leet1346 {
         return false;
     }
 
+    public boolean checkIfExist3(int[] arr) {
+
+        Arrays.sort(arr);
+        Set<Integer> set = new HashSet<>();
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (set.contains(arr[i] * 2)) {
+                return true;
+            }
+            if (arr[i] % 2 == 0 && set.contains(arr[i] / 2)) {
+                return true;
+            }
+
+            set.add(arr[i]);
+
+        }
+
+
+        return false;
+    }
+
     /**
      * 双指针
      *
@@ -172,59 +195,16 @@ public class Leet1346 {
      */
     public boolean checkIfExist(int[] arr) {
 
+
         Arrays.sort(arr);
-
-        int c = 0, p = 0;
-        int m = 0;
-
-        while (c < arr.length) {
-            int item = arr[c];
-
-            if (item % 2 == 1 || item % 2 == -1) {
-                c++;
-                p = 0;
-                continue;
+        int q = 0;
+        for(int p = 0; p < arr.length; p++) {
+            while(q < arr.length && arr[p] * 2 > arr[q]) {
+                q++;
             }
-
-            if (item < 0) {
-                while (p < arr.length) {
-
-                    if (c == p) {
-                        p++;
-                    }
-                    if (arr[p] >= 0) {
-                        c++;
-                        p = 0;
-                        m = p;
-                        break;
-                    }
-                    if (item == arr[p]) {
-                        return true;
-                    }
-                    p++;
-                }
-            } else {
-                while (p < arr.length) {
-
-                    if (c == p) {
-                        p++;
-                    }
-                    if (p >= arr.length) {
-                        break;
-                    }
-                    if (arr[p] < 0) {
-                        c++;
-                        p = m;
-                        break;
-                    }
-                    if (item == arr[p]) {
-                        return true;
-                    }
-                    p++;
-                }
-
+            if(q != arr.length && p != q && arr[p] * 2 == arr[q]) {
+                return true;
             }
-            c++;
         }
 
         return false;
