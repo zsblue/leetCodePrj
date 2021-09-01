@@ -52,15 +52,56 @@ package com.leet.code;
  */
 public class Leet0034 {
     public static void main(String[] args) {
-//        long t = (long) Math.pow(10, 11);
-//        System.out.println(t);
+        Leet0034 leet = new Leet0034();
 
-        String pURL = "https://39.105.133.193:9010/cm-login/TBoss/Order/productInfo?pname=%s&desc=%s&payment=%s&orderNo=%s";
+        int[] nums;
+        int target;
+        int[] result, verify;
 
-        String r = String.format(pURL, "aaa", "bbb", "ccc", "ddd");
-        System.out.println(r);
+        nums = new int[]{5,7,7,8,8,10};
+
+        target = 8;
+        verify = new int[]{3,4};
+        result = leet.searchRange(nums,target);
+        BaseLeet.check(verify,result);
+
+
+        target = 6;
+        verify = new int[]{-1,-1};
+        result = leet.searchRange(nums,target);
+        BaseLeet.check(verify,result);
+
+        target = 0;
+        verify = new int[]{-1,-1};
+        result = leet.searchRange(nums,target);
+        BaseLeet.check(verify,result);
 
 
 
+    }
+
+    private int[] searchRange(int[] nums, int target) {
+
+        int start = -1;
+        int end = -1;
+        for (int i = 0; i < nums.length; i++) {
+
+            if (target > nums[i]) {
+                continue;
+            }
+            if (target < nums[i]) {
+                break;
+            }
+            if (target == nums[i]) {
+                if (start < 0) {
+                    start = i;
+                    end =i;
+                } else {
+                    end = i;
+                }
+            }
+        }
+
+        return new int[]{start, end};
     }
 }
