@@ -47,7 +47,7 @@ public class BaseLeet {
     public static void check(int[] verify, int[] result) {
         String a1 = Arrays.toString(verify);
         String a2 = Arrays.toString(result);
-        System.out.println(a1.equals(a2));
+        System.out.println(a1.equals(a2)+"===>");
         System.out.println(a1);
         System.out.println(a2);
         System.out.println();
